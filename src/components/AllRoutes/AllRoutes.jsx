@@ -1,17 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom'; 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AboutPage from '../home/AboutPage';
 import HomePage from '../home/HomePage'
 
 const AllRoutes = () => {
   
   return (
-    <Router>
-      <div>
-        <Route path='/' component={<HomePage/>}/>
-      </div>
-    </Router>
+<Router>
+    <div>
+      <Routes>
+      <Route path='/' element={<HomePage />}/>
+      <Route path='/about' element={<AboutPage />}/>
+      </Routes>
+    </div>
+  </Router>
   )
 }
-const root = ReactDOM.createRoot(document.getElementById('root'));
 export default AllRoutes

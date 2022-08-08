@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import AllRoutes from './components/AllRoutes/AllRoutes';
+import HeaderHorizhondal from './components/header/HeaderHorizondal';
 
 function App() {
   return (
     // <div className="App">
+    <>
+    <HeaderHorizhondal/>
       <AllRoutes/>
+      </>
       // {/* <header className="App-header">
       //   <img src={logo} className="App-logo" alt="logo" />
       //   <p>
