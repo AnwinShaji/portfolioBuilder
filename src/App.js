@@ -2,13 +2,17 @@ import logo from './logo.svg';
 import './App.css';
 import AllRoutes from './components/AllRoutes/AllRoutes';
 import HeaderHorizhondal from './components/header/HeaderHorizondal';
+import { QueryClientProvider } from 'react-query';
 
 function App() {
   return (
     // <div className="App">
     <>
-    <HeaderHorizhondal/>
-      <AllRoutes/>
+    {/* <HeaderHorizhondal/> */}
+    <QueryClientProvider>
+    <AllRoutes/>
+
+    </QueryClientProvider>
       </>
       // {/* <header className="App-header">
       //   <img src={logo} className="App-logo" alt="logo" />
