@@ -1,0 +1,43 @@
+.candidate-login-container{
+    margin-top: 10%;
+    border: 1px solid #cecece;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding:1rem;
+    .candiate-login-title{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #683642;
+    }
+    .candidate-login-details{
+        margin-bottom: 1rem;
+        .candidate-user-title-container{
+            margin-top: 0.5rem;
+            display: grid;
+
+        }
+        .candidate-login-label{
+            font-size: 1rem;
+            font-weight: 500;
+            color: #683642;
+        }
+        .candidate-text{
+            height: 1.8rem;
+            margin-top: 0.5rem;
+            border-radius: 5px;
+            border: 1px solid #cecece;
+
+        }
+
+    }
+    .login-button{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .candidate-registration{
+        text-align: center;
+        cursor: pointer;
+    }
+}
