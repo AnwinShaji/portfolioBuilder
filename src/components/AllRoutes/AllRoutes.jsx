@@ -10,7 +10,9 @@ const AllRoutes = () => {
   return (
 <Router>
     <div>
-      <Routes path='/header' element={<HeaderHorizhondal/>}>
+    <HeaderHorizhondal/>
+      <Routes>
+        
         {/* <Route path='/header' element={<HeaderHorizhondal/>}/> */}
       <Route path='/' element={<HomePage />}/>
       <Route path='/about' element={<AboutPage />}/>

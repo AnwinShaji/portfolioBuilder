@@ -36,7 +36,7 @@ const onRedirect=(item)=>{
     menus?.map((step)=>{
         return (step.isActive=step?.id===item?.id);
      });
-     if(item.path !== "/") history(item.path);
+     history(item.path);
         
     }
 
@@ -44,7 +44,7 @@ const onRedirect=(item)=>{
   return (
     <div className='header-container'>
         {menus?.map((item,index)=>(
-        <div className='header-title' onClick={onRedirect(item)}>
+        <div className='header-title' onClick={()=>onRedirect(item)}>
             {item?.title}
         </div>
         ))}
